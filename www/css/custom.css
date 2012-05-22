@@ -1,0 +1,63 @@
+.fit-width
+{
+	width: 100%;
+	max-width: 480px;
+}
+
+.originalImage
+{
+    position : relative;
+    left: -10000px;
+}
+
+#message
+{
+    position : absolute;
+    text-align: center;
+    padding-right: 10px;
+}
+
+#postcard
+{
+    position : absolute;
+}
+
+
+
+.ui-app-bar-a .ui-icon-camera
+{
+    background-image: url(images/camera.white.png);
+}
+
+.ui-app-bar-b .ui-icon-camera
+{
+    background-image: url(images/camera.black.png);
+}
+
+.ui-app-bar-a .ui-icon-folder
+{
+    background-image: url(images/folder.white.png);
+}
+
+.ui-app-bar-b .ui-icon-folder
+{
+    background-image: url(images/folder.black.png);
+}
+
+.ui-app-bar-a .ui-icon-save
+{
+    background-image: url(images/save.white.png);
+}
+
+.ui-app-bar-b .ui-icon-save
+{
+    background-image: url(images/save.black.png);
+}
+
+.ui-icon-camera,
+.ui-icon-folder,
+.ui-icon-save{
+    background-repeat: no-repeat;
+    background-position: 50% 50% ;
+    background-size: 30px 30px;
+}

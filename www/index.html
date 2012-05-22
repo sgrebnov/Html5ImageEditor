@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Editor</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <!-- jQuery Mobile theme -->
+    <link rel="stylesheet" href="css/jquery.mobile.metro.theme.css"/>
+    <!--<link rel="stylesheet" href="css/jquery.mobile.css"/>-->
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/custom.css"/>
+
+    <script src="js/utils/utils.js"></script>
+
+    <script src="cordova-1.7.0.js"></script>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile.js"></script>
+
+    
+    <script src="js/utils/jquery.globalstylesheet.js"></script>
+    <script src="js/utils/jquery.easing.js"></script>
+	<script src="css/jquery.mobile.metro.theme.init.js"></script>
+	<script src="js/jquery.mobile.themeswitcher.js"></script>
+    <script src="js/utils/pixastic.custom.js"></script>
+    <script src="js/utils/jquery.debounce.js"></script>
+	<script src="js/utils/gfx.js"></script>
+    <script src="js/utils/postcard.js"></script>
+    <script src="js/utils/animation.js"></script>
+
+	
+    <script src="js/application.js"></script>
+
+    <link href="css/app-bar.css" rel="stylesheet" type="text/css" />
+    <script src="js/app-bar.js"></script>
+
+    <script src="js/phoneTheme.js"></script>
+    <script src="js/jquery.cordova.metro.themeswitcher.js"></script>
+
+
+
+</head>
+<body>
+
+<div data-role="page">
+
+    <div data-role="header">
+        <span class="ui-app-title">Devcon 2012</span>
+        <h1>Image Editor</h1>
+    </div>
+
+    <div data-role="content" data-theme="a">
+
+        <label for="selectImageMenu" class="select">Select image:</label>
+        <select name="selectImageMenu" id="selectImage">
+            <option value="images/html5 logo.png">HTML 5</option>
+            <option value="images/hanselman.jpg">Scott Hanselman</option>
+            <option value="images/dc11 logo.jpg">DevCon 11</option>
+            <option value="images/dc12 logo.png">DevCon 12</option>
+            <option value="images/sample1.jpg">Some picture</option>
+            <option value="images/sample2.jpg">Another picture</option>
+        </select>
+        <br/>
+
+        <div id="postcardContainer">
+        <p  id="message">Ahhhh… we love you too!  Thanks for coming to DevCon 12</p>
+        <div id="postcard">
+
+        </div> </div>
+
+        <div class="originalImage">
+            <img id="imgToProcess" class="fit-width"/>
+        </div>
+
+        <h6>contrast</h6>
+        <div id="div-slider">
+            <input type="range" name="slider" value="0" min="-50" max="50" id='sliderContrast'/>
+        </div>
+        <br/>
+
+        <h6>brigthness</h6>
+        <div id="div-slider2">
+            <input type="range" name="slider" value="0" min="-150" max="150" id='sliderBrithness'/>
+        </div>
+        <br/>
+
+        <div data-role="fieldcontain">
+            <label for="sliderBW">Black and White</label>
+            <select name="sliderBW" id="sliderBW" data-role="slider">
+                <option value="off">Off</option>
+                <option value="on">On</option>
+            </select>
+        </div>
+
+        <a data-role="button" id="btnReset" data-rel="dialog" href="reset-dialog.html">Reset</a>
+        <a data-role="button" id="btnLoadPicture">Load Picture</a>
+
+        <br/>
+
+        <br/>
+
+    </div>
+    
+    <div data-role='app-bar' >
+        <a href='javascript:loadPicture(navigator.camera.PictureSourceType.CAMERA)' data-icon='camera' >camera</a>
+        <a href='javascript:loadPicture(navigator.camera.PictureSourceType.PHOTOLIBRARY)' data-icon='folder' >library</a>
+        <ul>
+            <li><a href='about.html'>about</a></li>
+        </ul>
+    </div>
+
+</div>
+</body>
+</html>

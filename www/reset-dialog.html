@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<div data-role="page" data-overlay-theme="a">
+
+    <div data-role="header" >
+        <h1>Image will be reset</h1>
+
+    </div>
+
+    <div data-role="content" >
+        <p>Are your sure?</p>
+
+        <fieldset class="ui-grid-a">
+            <a data-role="button" data-inline = 'true' data-rel="back" id="dialogReset">Reset</a>
+            <a data-role="button" data-inline = 'true' data-rel="back" >Cancel</a>
+        </fieldset>
+
+    </div>
+
+    <script>
+        $("#dialogReset").bind( "click", function() {
+            onConfirm(1);
+        });
+    </script>
+
+</div>
+</body>
+</html>
