@@ -105,6 +105,7 @@
     <Content Include="www\css\images\set.light.png" />
     <Content Include="www\css\images\wait-indicator.gif" />
     <Content Include="www\css\app-bar.css" />
+    <Content Include="www\images\tr15logo.png" />
     <Content Include="www\js\app-bar.js" />
     <Content Include="www\js\jquery.cordova.metro.themeswitcher.js" />
     <Content Include="www\js\jquery.mobile.themeswitcher.js" />
@@ -123,8 +124,6 @@
     <Content Include="www\css\jquery.mobile.css" />
     <Content Include="www\css\jquery.mobile.metro.theme.css" />
     <Content Include="www\css\jquery.mobile.metro.theme.init.js" />
-    <Content Include="www\images\dc11 logo.jpg" />
-    <Content Include="www\images\dc12 logo.png" />
     <Content Include="www\images\hanselman.jpg" />
     <Content Include="www\images\html5 logo.png" />
     <Content Include="www\images\sample1.jpg" />

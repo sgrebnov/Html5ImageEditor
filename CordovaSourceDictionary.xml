@@ -24,6 +24,7 @@
     <FilePath Value="www\css\images\set.light.png"/>
     <FilePath Value="www\css\images\wait-indicator.gif"/>
     <FilePath Value="www\css\app-bar.css"/>
+    <FilePath Value="www\images\tr15logo.png"/>
     <FilePath Value="www\js\app-bar.js"/>
     <FilePath Value="www\js\jquery.cordova.metro.themeswitcher.js"/>
     <FilePath Value="www\js\jquery.mobile.themeswitcher.js"/>
@@ -41,8 +42,6 @@
     <FilePath Value="www\css\jquery.mobile.css"/>
     <FilePath Value="www\css\jquery.mobile.metro.theme.css"/>
     <FilePath Value="www\css\jquery.mobile.metro.theme.init.js"/>
-    <FilePath Value="www\images\dc11 logo.jpg"/>
-    <FilePath Value="www\images\dc12 logo.png"/>
     <FilePath Value="www\images\hanselman.jpg"/>
     <FilePath Value="www\images\html5 logo.png"/>
     <FilePath Value="www\images\sample1.jpg"/>

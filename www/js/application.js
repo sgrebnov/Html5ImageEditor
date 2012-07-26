@@ -9,7 +9,7 @@ function initialize() {
     window.postcard = Postcard();
 
     // default picture
-    setPicture ("images/html5 logo.png");
+    setPicture("images/tr15logo.png");
 
     // event handlers
     $("#selectImage").bind("change", function (event, ui) {
@@ -131,7 +131,7 @@ function initializePersonalizedMessages()
     var knownPictures = [];
 
     knownPictures["images/hanselman.jpg"] = "New office policy: Next time there is a fire alarm,<br/>(1) commit <br/>(2) pull <br/>(3) merge <br/>(4) push <br/>(5) exit through stairwell";
-    knownPictures["images/dc11 logo.jpg"] = 'Q: How many programmers does it take to change a lightbulb?<br/>A: None. They won’t touch it because it’s a hardware problem.';
+    knownPictures["images/html5 logo.png"] = 'Q: How many programmers does it take to change a lightbulb?<br/>A: None. They won’t touch it because it’s a hardware problem.';
     knownPictures["images/sample2.jpg"] = "If you've seen a better picture of a ‪#dog‬ dressed as two pirates carrying a treasure chest today, I don't believe you.";
 
     window.knownPictures = knownPictures;
@@ -144,7 +144,7 @@ function getTextForImg(imgSrc)
         return window.knownPictures[imgSrc];
     }
 
-    return "Ahhhh… we love you too!  Thanks for coming to DevCon 12";
+    return "Ahhhh… we love you too!  Thanks for coming to TechReady15";
 }
 
 $(document).ready(function () {
