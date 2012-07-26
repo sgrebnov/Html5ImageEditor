@@ -2,6 +2,9 @@ window.isPostcardInitialized = false;
 
 function initialize() {
 
+    initializePersonalizedMessages();
+
+
     // postcard logic set up
     window.postcard = Postcard();
 
@@ -46,8 +49,10 @@ function setPicture(imgSrc)
     {
         Pixastic.process(getTargetImage(), "brightness", {brightness: 0, contrast: 0});
 
+        var message = getTextForImg(imgSrc);
+
         setTimeout(function() {
-            postcard.show();
+            postcard.show(message);
             window.isPostcardInitialized = true;
             getTargetImage().style.setProperty("position", "absolute", "important");
             img.style.setProperty("position", "absolute", "important");
@@ -55,7 +60,6 @@ function setPicture(imgSrc)
 
     }
     img.src = imgSrc;
-
 }
 
 function loadPicture (source)
@@ -120,6 +124,27 @@ function showConfirm() {
         'Image will be reset', // title
         'Reset,Cancel'          // buttonLabels
     );
+}
+
+function initializePersonalizedMessages()
+{
+    var knownPictures = [];
+
+    knownPictures["images/hanselman.jpg"] = "New office policy: Next time there is a fire alarm,<br/>(1) commit <br/>(2) pull <br/>(3) merge <br/>(4) push <br/>(5) exit through stairwell";
+    knownPictures["images/dc11 logo.jpg"] = 'Q: How many programmers does it take to change a lightbulb?<br/>A: None. They won’t touch it because it’s a hardware problem.';
+    knownPictures["images/sample2.jpg"] = "If you've seen a better picture of a ‪#dog‬ dressed as two pirates carrying a treasure chest today, I don't believe you.";
+
+    window.knownPictures = knownPictures;
+
+}
+
+function getTextForImg(imgSrc)
+{
+    if (window.knownPictures[imgSrc]) {
+        return window.knownPictures[imgSrc];
+    }
+
+    return "Ahhhh… we love you too!  Thanks for coming to DevCon 12";
 }
 
 $(document).ready(function () {

@@ -44,8 +44,9 @@ Postcard = (function () {
     var requestFrameRender = requestFrameRender2;
 
     // external initilization
-    function show() {
+    function show(message) {
         createCompositePhoto();
+        setPersonalizedMessage(message);
         showHint();
     }
 
@@ -67,7 +68,8 @@ Postcard = (function () {
     }
 
     function setPersonalizedMessage(messageString) {
-        message.textContent = messageString;
+        //message.textContent = messageString;
+        message.innerHTML = messageString;
     }
 
     function reset() {
