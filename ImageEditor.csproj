@@ -57,7 +57,7 @@
     <Reference Include="System.Net" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="WP7CordovaClassLib, Version=1.7.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="WP7CordovaClassLib, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -81,7 +81,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CordovaSourceDictionary.xml" />
+    <Content Include="GapLib\WP7CordovaClassLib.dll" />
     <Content Include="www\about.html" />
+    <Content Include="www\cordova.js" />
     <Content Include="www\css\images\ajax-loader.png" />
     <Content Include="www\css\images\camera.black.png" />
     <Content Include="www\css\images\camera.white.png" />
@@ -117,8 +119,6 @@
     <Content Include="www\js\utils\utils.js" />
     <Content Include="www\reset-dialog.html" />
     <None Include="BuildManifestProcessor.js" />
-    <Content Include="GapLib\WP7CordovaClassLib.dll" />
-    <Content Include="www\cordova-1.7.0.js" />
     <Content Include="www\css\custom.css" />
     <Content Include="www\css\jquery.mobile.css" />
     <Content Include="www\css\jquery.mobile.metro.theme.css" />

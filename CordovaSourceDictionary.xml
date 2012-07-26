@@ -2,6 +2,7 @@
 <!-- This file is auto-generated, do not edit! -jm -->
 <CordovaSourceDictionary>
     <FilePath Value="www\about.html"/>
+    <FilePath Value="www\cordova.js"/>
     <FilePath Value="www\css\images\ajax-loader.png"/>
     <FilePath Value="www\css\images\camera.black.png"/>
     <FilePath Value="www\css\images\camera.white.png"/>
@@ -36,7 +37,6 @@
     <FilePath Value="www\js\utils\postcard.js"/>
     <FilePath Value="www\js\utils\utils.js"/>
     <FilePath Value="www\reset-dialog.html"/>
-    <FilePath Value="www\cordova-1.7.0.js"/>
     <FilePath Value="www\css\custom.css"/>
     <FilePath Value="www\css\jquery.mobile.css"/>
     <FilePath Value="www\css\jquery.mobile.metro.theme.css"/>

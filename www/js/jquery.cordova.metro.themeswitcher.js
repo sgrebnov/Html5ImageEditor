@@ -1,4 +1,4 @@
-Cordova.addConstructor(function () {
+cordova.addConstructor(function () {
 
     console.log("Installing jqueryThemeSwitch");
 
